@@ -1,0 +1,36 @@
+{
+  "name": "genpark-terminal-session-semantic-history-search-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Shell session history semantic searcher matching natural language intents to synthesized CLI flags and piping commands.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "service",
+  "tags": [
+    "warp-terminal",
+    "cli-search",
+    "shell-history",
+    "terminal-ai",
+    "developer-productivity"
+  ],
+  "inputs": {
+    "natural_language_query": {
+      "type": "string"
+    },
+    "session_shell": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "search_id": {
+      "type": "string"
+    },
+    "suggested_cli_command": {
+      "type": "string"
+    },
+    "relevance_score": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
